@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import router from './router';
+import {HashRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 
@@ -143,9 +144,11 @@ class App extends Component {
 
   render() {
     return (
+      <HashRouter>
       <div>
         { router }
       </div>
+      </HashRouter>
     );
   }
 }

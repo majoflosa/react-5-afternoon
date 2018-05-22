@@ -9,7 +9,9 @@ import store from './store';
 
 ReactDOM.render(
     <Provider store={store}>
-        <HashRouter><App /></HashRouter>
+        {/* <HashRouter> */}
+            <App />
+        {/* </HashRouter> */}
     </Provider>, 
     document.getElementById('root')
 );
